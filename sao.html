@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>刀剑神域</title>
+		<style type="text/css">
+			#tab {
+				overflow: hidden;
+				width: 800px;
+				height: 300px;
+				position: relative;
+				left: 0px;
+				top: 0px;
+			}
+			body
+			{
+				cursor: url(./img/beijin.cur), auto;
+			}
+			img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			#tab>img:not(:first-child) {
+				display: none;
+			}
+			
+			.div1 {
+				/*width: auto;
+				height: 300px;*/
+				filter:alpha(opacity=20);  
+                -moz-opacity:0.2;  
+                -khtml-opacity: 0.2;  
+                opacity: 0.4;
+                height:2000px;
+                width:100%;
+                position:absolute;
+				
+			}
+			
+			.div2 {
+				position: relative;
+				left: 150px;
+			}
+			.div4
+			{
+				height: 20px;
+			}
+			.xianzhi {
+				width: 140px;
+				height: 200px;
+				float: left;
+				position: relative;
+				top: 20px;
+				left: 10px;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			.a1 {
+				color: blue;
+				font-size: 22px;
+				position: relative;
+				left: 180px;
+				top: -210px;
+			}
+			
+			.a2 {
+				font-size: 22px;
+				position: relative;
+				left: 180px;
+				top: -210px;
+			}
+			
+			.a3 {
+				font-size: 20px;
+				position: relative;
+				left: 180px;
+				top: -210px;
+			}
+			.a7{
+				font-size: 20px;
+				position: relative;
+				left: 40px;
+				top: 20px;
+			}
+			.a8{
+				font-size: 22px;
+				position: relative;
+				left: 40px;
+				top: 20px;
+			}
+			.a9{
+				color: blue;
+				font-size: 22px;
+				position: relative;
+				left: 40px;
+				top: 20px;
+			}
+		</style>
+		<script>
+			var interval;
+			var pos = 0;
+			window.onload = function() {
+				var tab = document.getElementById("tab");
+				var images = document.getElementById("tab").getElementsByTagName("img");
+				tab.onmouseover = function() {
+					clearInterval(interval);
+				}
+				tab.onmouseout = function() {
+					run(images);
+				}
+				run(images);
+			}
+			var run = function(images) {
+				interval = setInterval(function() {
+					images[pos].style.display = 'none';
+					pos = ++pos == images.length ? 0 : pos;
+					images[pos].style.display = 'inline';
+				}, 3000);
+			}
+		</script>
+	</head>
+
+	<body>
+		<!--
+        <audio src="music/Fall Out Boy - Centuries.mp3" autoplay="autoplay"></audio>-->
+        <div class="div1">
+			<img src="imging/艾恩葛朗特.jpg">
+		</div>
+		<div class="div2" style=" position: relative;left: 300px;">
+			<div id="tab" style="float: left;">
+				<img src="img/刀剑.jpg" />
+				<img src="img/神域.jpg" />
+				<img src="img/刀剑1.jpg" />
+				<img src="img/刀剑2.jpg" />
+				<img src="img/刀剑3.jpg" />
+				<img src="img/刀剑4.jpg" />
+				<img src="img/刀剑5.jpg" />
+				<img src="img/刀剑6.jpg" />
+			</div>
+			<div style="clear: both;">
+				<div style="border: 1px dashed #96c2f1; height: 250px; width: 800px; border-radius: 10px; background: #eff7ff;">
+					<div class="xianzhi">
+						<img src="imging/桐谷和人头像图.jpg" />
+					</div>
+						<div style="width: 750px;">
+							<a href="tongren.html" class="a9">桐谷和人</a><br />
+							<font class="a8" color="black">性别：男</font><br />
+							<font class="a8" color="black">所属动漫：
+								<<a href="daojian.html">刀剑神域</a>></font><br />
+							<font class="a8" color="black">简介:</font>
+							<font class="a7">出自日本轻小说《刀剑神域》及轻小说衍生动漫《刀剑神域》。从封测时期就开始玩SAO被称为“封弊者”的资深玩家，有着“黑色剑士”的称号。并在自己将亡时，凭借着自己的意志，将这个游戏的创始人斩杀，成为了“拯救了世界的人—黑色骑士桐人”</font>
+						</div>
+			   </div>
+		    </div>
+
+		    <div style="clear: both;">
+				<div style="border: 1px dashed #96c2f1; height: 250px; width: 800px; border-radius: 10px; background: #eff7ff;">
+					<div class="xianzhi">
+						<img src="imging/亚丝娜头像图.png" 
+					</div>
+						<div style="width: 600px;">
+							<a href="yasina.html" class="a1">结城明日奈</a><br />
+							<font class="a2" color="black">性别：女</font><br />
+							<font class="a2" color="black">所属动漫：
+								<<a href="daojian.html">刀剑神域</a>></font><br />
+							<font class="a2" color="black">简介:</font>
+							<font class="a3">结城明日奈，轻小说《刀剑神域》及其衍生作品中的女主角。因好奇借用哥哥结成浩一郎的NERvGear进入SAO的网络游戏新手，并用真名取游戏角色名字。</font>
+						</div>
+			   </div>
+		    </div>
+
+		    <div style="clear: both;">
+				<div style="border: 1px dashed #96c2f1; height: 250px; width: 800px; border-radius: 10px; background: #eff7ff;">
+					<div class="xianzhi">
+						<img src="imging/克莱因.jpg" 
+					</div>
+						<div style="width: 600px;">
+							<a href="kelaiying.html" class="a1">克莱因</a><br />
+							<font class="a2" color="black">性别：男</font><br />
+							<font class="a2" color="black">所属动漫：
+								<<a href="daojian.html">刀剑神域</a>></font><br />
+							<font class="a2" color="black">简介:</font>
+							<font class="a3">克莱因/壶井辽太郎 声优:[日本]平田广明[台湾]黄天佑[香港]刘奕希 年龄：22-24（SAO经历2年） 桐人在SAO世界的第一个朋友，公会「风林火山」的会长。 拥有很强的统帅领导能力，只要他在的地方就会自动聚集同伴。独特技能为“太刀” 。</font>
+						</div>
+			   </div>
+		    </div>
+
+		    <div style="clear: both;">
+				<div style="border: 1px dashed #96c2f1; height: 250px; width: 800px; border-radius: 10px; background: #eff7ff;">
+					<div class="xianzhi">
+						<img src="imging/结衣.jpg" 
+					</div>
+						<div style="width: 600px;">
+							<a href="jieyi.html" class="a1">结衣</a><br />
+							<font class="a2" color="black">性别：女</font><br />
+							<font class="a2" color="black">所属动漫：
+								<<a href="daojian.html">刀剑神域</a>></font><br />
+							<font class="a2" color="black">简介:</font>
+							<font class="a3">结衣(唯) 声优:[日本]伊藤加奈惠[台湾]林美秀[香港]成瑶孆 桐人和亚丝娜的第一个孩子（度蜜月期间在森林里捡到的）。真正身份是SAO的MHCP，负责维护玩家精神健康的咨询用AI。在游戏SAO初期被玩家大量恶意感染而崩坏，后来受到桐人与亚丝娜的感情吸引而醒来。</font>
+						</div>
+			   </div>
+		    </div>
+
+		    <div style="clear: both;">
+				<div style="border: 1px dashed #96c2f1; height: 250px; width: 800px; border-radius: 10px; background: #eff7ff;">
+					<div class="xianzhi">
+						<img src="imging/诗乃.jpg" 
+					</div>
+						<div style="width: 600px;">
+							<a href="shinai.html" class="a1">朝田诗乃</a><br />
+							<font class="a2" color="black">性别：女</font><br />
+							<font class="a2" color="black">所属动漫：
+								<<a href="daojian.html">刀剑神域</a>></font><br />
+							<font class="a2" color="black">简介:</font>
+							<font class="a3">朝田诗乃，川原砾所作轻小说《刀剑神域》幽灵子弹篇以及其改编动画《刀剑神域Ⅱ》幽灵子弹篇的女主角。为克服童年阴影而登入VRMMO-RPG “Gun Gale Online” 的玩家，称号为“冰之狙击手”。 “死枪”事件后在桐谷和人的邀请下转换到新生了ALO中，角色为猫妖精，擅长使用弓箭狙击。</font>
+						</div>
+			   </div>
+		   </div>
+		   
+		    <div style="clear: both;">
+				<div style="border: 1px dashed #96c2f1; height: 250px; width: 800px; border-radius: 10px; background: #eff7ff;">
+					<div class="xianzhi">
+						<img src="imging/茅场晶彦.jpg" 
+					</div>
+						<div style="width: 600px;">
+							<a href="maochang.html" class="a1">茅场晶彦</a><br />
+							<font class="a2" color="black">性别：男</font><br />
+							<font class="a2" color="black">所属动漫：
+								<<a href="daojian.html">刀剑神域</a>></font><br />
+							<font class="a2" color="black">简介:</font>
+							<font class="a3">NERvGear的基础和SAO游戏的设计者。以量子物理学者兼天才游戏设计师而闻名于世，但很少在媒体上露脸，是桐人曾经景仰的对象。在SAO正式营运的首日绑架了一万名（网络版为五万名）玩家成为NERvGear的囚犯，并宣布SAO死亡游戏化。目的是想实现“真正的异世界”。</font>
+						</div>
+			   </div>
+		    </div>
+		</div>
+	</body>
+
+</html>
