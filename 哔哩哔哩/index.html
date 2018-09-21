@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=440,user-scalable=no">
+<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+<title>哔哩哔哩 - ( ゜- ゜)つロ 干杯~</title>
+
+<style type="text/css">
+    *{ margin: 0; padding: 0}
+    ul,li{ list-style: none}
+    .tabClick{ background: white; overflow: hidden}
+    .tabClick li{ height:40px; line-height: 40px; width: 25%; float: left; text-align: center}
+    .tabClick li.active{ color: #099; transition: 0.1s; font-weight: bold}
+    .tabCon{ overflow: hidden}
+    .tabBox{ position: relative}
+    /*.tabList{word-break: break-all; width:100%;float:left; line-height:100px; text-align:center; color:#D3D3D3; font-size:36px; font-family: "Arial Black"}*/
+    .lineBorder{ height: 2px; overflow: hidden;  background: #f3f3f3}
+    .lineDiv{ background: #099; height: 2px; width: 25%;}
+    		.up {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin: -320px 0 0 -470px;
+				width: 1000px;
+			}
+			
+			#div1 {
+				height: 50px;
+				background: gainsboro;
+				filter: alpha(opacity=50);
+				-moz-opacity: 0.50;
+				opacity: 0.50;
+			}
+			
+			.op {
+				list-style-type: none;
+				display: inline;
+			}
+			
+			#li1 {
+				list-style-type: none;
+			}
+			
+			#li2 {
+				list-style-type: none;
+				position: relative;
+				left: 348px;
+			}
+			
+			.div2 {
+				
+				height: 200px;
+				background-image: url(img/2233.jpg);
+				/*background-repeat:no-repeat;*/
+				background-size: 100% 100%;
+				-moz-background-size: 100% 100%;
+			}
+			
+			.div3 {
+				height: 200px;
+				border: 1px solid #96c2f1;
+				background: #eff7ff
+			}
+			
+			.div4 {
+				height: 20px;
+			}
+			.div5 {
+				height: 100px;
+				display: inline;
+			}
+			
+			.ul1 {
+				
+				padding: 200px, 0, 0, 0;
+			}
+			
+			.div-inline {
+				display: inline;
+			}
+			
+			.img1 {
+				border: 0;
+				position: relative;
+				top: 8px;
+			}
+			
+			.img2 {
+				border: 0;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height:80%;
+				margin: auto;
+				position: relative;
+				left: 20px;
+				position: relative;
+				top: 20px;
+			}
+			
+			.a1 {
+				height: 200px;
+				position: relative;
+				top: -120px;
+				position: relative;
+				left: 40px;
+				font-size: 22px;
+			}
+			
+			.a2 {
+				position: relative;
+				top: -120px;
+				position: relative;
+				left: 300px;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			a:link {
+				color: red;
+			}
+			
+			a:visited {
+				color: black;
+			}
+			
+			a:hover {
+				border: 1px solid gainsboro;
+			}
+			
+			a:hover {
+				color: red;
+				text-decoration: underline;
+			}
+			
+			a:active {
+				color: red;
+			}
+				/* 设置ul和li的样式 */
+			
+			.ul1 ul,
+			.ul1 li {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				float: left;
+			}
+			/* 设置二级菜单绝对定位，并隐藏 */
+			
+			.ul1>ul>li>ul {
+				position: absolute;
+				display: none;
+			}
+			/* 设置二级菜单的li的样式 */
+			
+			.ul1>ul>li>ul>li {
+				float: none;
+			}
+			/* 鼠标放在一级菜单上，显示二级菜单 */
+			
+			.ul1>ul>li:hover ul {
+				display: block;
+			}
+			/* 一级菜单 */
+			
+			.ul1>ul>li>a {
+				/*width: 120px;
+				line-height: 40px;*/
+				color: black;
+				/*background-color: #cfe;*/
+				text-align: center;
+				/*border-left: 1px solid #bbf;*/
+				display: block;
+			}
+			/* 在一级菜单中，第一个不设置左边框 */
+			
+			.ul1>ul>li:first-child>a {
+				border-left: none;
+			}
+			/* 在一级菜单中，鼠标放上去的样式 */
+			
+			.ul1>ul>li>a:hover {
+				color: #f0f;
+				background-color: #bcf;
+			}
+			/* 二级菜单 */
+			
+			.ul1>ul>li>ul>li>a {
+				width: 400px;
+				line-height: 36px;
+				color: #456;
+				background-color: #eff;
+				text-align: center;
+				border: 1px solid #ccc;
+				border-top: none;
+				display: block;
+			}
+			/* 在二级菜单中，第一个设置顶边框 */
+			
+			.ul1>ul>li>ul>li:first-child>a {
+				border-top: 1px solid #ccc;
+			}
+			/* 在二级菜单中，鼠标放上去的样式 */
+			
+			.ul1>ul>li>ul>li>a:hover {
+				color: #a4f;
+				background-color: #cdf;
+			}
+			.ul2
+			{
+				position: relative;
+				left: 140px;
+				top: 14.5px;
+			}
+			.p
+			{
+				position: relative;
+				left: 180px;
+				top: -26px;
+				display: inline;
+			}
+</style>
+<body>
+			<div class="div2">
+				<div id="div1" style="text-align:left; padding: 8px,8px,8px,8px;">
+					<div class="ul1">
+						<p class="op">
+							<a href="index.html" title="主站"><img src="img/bilibili_icon.png" align="bottom" class="img1">主站</a>
+						</p>
+						<p class="op">
+							<a href="xiaoxi.html" title="消息">消息</a>
+						</p>
+						<p class="op">
+							<ul class="ul2">
+							<li>
+								 <a href="">动态</a>	
+								 <ul>
+								 	<li>
+								        <a>你所关注的up主暂未更新</a>
+								 	</li>
+								 	
+								 	<li>
+								 		<div style="width:400px;height:0px;border-top:1px black dashed;">
+								 			
+								 		</div>
+								 	</li>
+								 	
+								 	<li>
+								 		<a href="joker.html">Joker,三天前更新</a>
+								 	</li>
+								 	
+								 	<li>
+								 		<a href="lovelive.html">真姬，我老婆,六天前更新</a>
+								 	</li>
+								 	
+								 	<li>
+								 		<a href="anglebeats.html">angle,十天前更新</a>
+								 	</li>
+								 </ul>
+							</li>
+							</ul>
+						</p>
+						<p class="p">
+							<a href="shoucang.html" title="收藏夹">收藏夹</a>
+						</p>
+						<p class="p">
+							<a href="zhuce.html" target="_blank" title="注册/登录">
+								<font color="red" size="4">注册/登录</font>
+							</a>
+						</p>
+						<!-- <li class="op">
+							<a href="denglu.html" title="登录">
+								<font color="red" size="4">登录</font>
+							</a>
+						</li></-->		
+					</div>
+				</div>
+			</div>
+<div class="wrap" id="wrap">
+    <ul class="tabClick">
+        <li class="active">动画</li>
+        <li>音乐</li>
+        <li>番剧</li>
+        <li>游戏</li>
+    </ul>
+    <div class="lineBorder">
+        <div class="lineDiv"><!--移动的div--></div>
+    </div>
+    <div class="tabCon">
+        <div class="tabBox">
+        	<div class="tabList">
+            <div class="div3">
+				<div class="div5">
+					<a href="index2.html"><img src="img/yuban.jpg" class="img2" id="cp" onmousemove="mousemove(this);" onmouseout="mouseout(this);"/></a>
+				</div>
+				<div class="div5">
+					<a href="index2.html" class="a1">你指间跃动得电光是我此生不变的信仰</a>
+					</br>
+					<li class="a2" id="li1">标签：二次元，某科学的超电磁炮，炮姐</li>
+					<div class="div4"></div>
+					<li class="a2" id="li1">简介：御剑奔雷掣寒霄，</li>
+					<li class="a2" id="li2">坂间素面羡桃夭。</li>
+					<li class="a2" id="li2">美人飒飒冰心月，</li>
+					<li class="a2" id="li2">琴韵寒梅笑今朝。</li>
+				</div>
+			</div>
+			<div class="div4"></div>
+			<div class="div3">
+				<a href="leimu.html"><img src="img/leimu.jpg" class="img2" id="leimu2" onmousemove="mousemove(this);" onmouseout="mouseout(this);"/></a>
+				<a href="leimu.html" class="a1">如果真爱有颜色，那一定是蓝色</a>
+				<li class="a2" id="li1">标签：二次元，从零开始的异世界生活，蕾姆</li>
+				<div class="div4"></div>
+				<li class="a2" id="li1">简介：R.K.T!レム、こそ、天使!蕾姆，才是，天使!</li>
+				<li class="a2" id="li2">R.K.T!レム、こそ、天使!蕾姆，才是，天使!</li>
+				<li class="a2" id="li2">R.K.T!レム、こそ、天使!蕾姆，才是，天使!</li>
+			</div>
+			<div class="div4"></div>
+			<div class="div3">
+				<a href="anglebeats.html"><img src="img/anglebeats.jpg" class="img2" id="zou" onmousemove="mousemove(this);" onmouseout="mouseout(this);"/></a>
+				<a href="anglebeats.html" class="a1">立于浮华之世,奏响天籁之音</a>
+				<li class="a2" id="li1">标签：二次元，天使的心跳，立华奏</li>
+				<div class="div4"></div>
+				<li class="a2" id="li1">简介：音无结弦之时</li>
+				<li class="a2" id="li2">跃动天使之心</li>
+				<li class="a2" id="li2">立于浮华之世</li>
+				<li class="a2" id="li2">奏响天籁之音</li>
+			</div>
+			<div class="div4"></div>
+			<div class="div3">
+				<a href="lovelive.html"><img src="img/lovelive.jpg" class="img2" id="ll" onmousemove="mousemove(this);" onmouseout="mouseout(this);"/></a>
+				<a href="lovelive.html" class="a1">みんなで実现の物语 ,大家来实现的故事</a>
+				<li class="a2" id="li1">标签：二次元，lovelive，缪斯</li>
+				<div class="div4"></div>
+				<li class="a2" id="li1">简介：台下已座无虚席</li>
+				<li class="a2" id="li2">台上却空无一人</li>
+				<li class="a2" id="li2">如果奇迹有颜色</li>
+				<li class="a2" id="li2">那么一定是九色</li>
+			</div>
+			<div class="div4"></div>
+			<div class="div3">
+				<a href="qingying.html"><img src="img/qingying.jpg" class="img2" id="qq" onmousemove="mousemove(this);" onmouseout="mouseout(this);"/></a>
+				<a href="qingying.html" class="a1">【轻音少女/治愈系】我愿一直陪着你 创造这小小的奇迹</a>
+				<li class="a2" id="li1">标签：二次元，轻音少女，演唱会，音乐</li>
+				<div class="div4"></div>
+				<li class="a2" id="li1">简介：但是我遇到了  那美丽的天使 </li>
+				<li class="a2" id="li2">毕业不是终点  以后我们还是朋友 </li>
+				<li class="a2" id="li2">你说“最喜欢你”，我回一句“最最喜欢你” </li>
+				<li class="a2" id="li2">不要留下遗憾，永远都在一起哦…</li>
+			</div>
+			<div class="div4"></div>
+			<div class="div3">
+				<a href="joker.html"><img src="img/joker.jpg" class="img2" id="xc" onmousemove="mousemove(this);" onmouseout="mouseout(this);"/></a>
+				<a href="joker.html" class="a1">【致敬经典】希斯莱杰·小丑：我不杀你，只是因为你太有趣！！！</a>
+				<li class="a2" id="li1">标签：视频剪辑，小丑，欧美</li>
+				<div class="div4"></div>
+				<li class="a2" id="li1">简介：Why so serious!</li>
+			</div>
+			<div class="div4"></div>
+			<div class="div3">
+				<a href="xg.html"><img src="img/xg.jpg" class="img2" id="ns" onmousemove="mousemove(this);" onmouseout="mouseout(this);"/></a>
+				<a href="xg.html" class="a1">【港片女神黑道向群像】（女人江湖 乱世巨星）</a>
+				<li class="a2" id="li1">标签：视频剪辑，香港，女神</li>
+				<div class="div4"></div>
+				<li class="a2" id="li1">简介：爱你浮华，爱你妖冶</li>
+				<li class="a2" id="li2">爱你无情，爱你凶狠</li>
+				<li class="a2" id="li2">爱你枯萎良善里开出的罪恶花。</li>
+			</div>
+			</div>
+			
+            <div class="tabList">
+            	<div id="skPlayer" style=" height: 400px; width: 600px; margin-left: 400px;"></div>
+            </div>
+            
+            <div class="tabList">
+			<div class="div4"></div>
+			<div class="div3">
+				<a href="https://www.bilibili.com/bangumi/play/ss425/?from=search&seid=12790219834590752945"><img src="img/cp.jpg" class="img2" id="cp2" onmousemove="mousemove(this);" onmouseout="mouseout(this);"/></a>
+				<img src="img/fanju.png" style="position: relative;top: -114px; left: 26px;" />
+				<a href="https://www.bilibili.com/bangumi/play/ss425/?from=search&seid=12790219834590752945" class="a1">某科学的超电磁炮</a>
+				<li class="a2" id="li1">地区: 日本</li>
+				<li class="a2" id="li1">风格: 百合、奇幻、校园、战斗、漫改</li>
+				<li class="a2" id="li1">声优：御坂美琴：佐藤利奈</li>
+				<li class="a2" id="li2"> 白井黑子：新井里美</li>
+				<li class="a2" id="li2"> 初春饰利：豊崎愛生</li>
+				<li class="a2" id="li2"> 佐天泪子：伊藤加奈惠 </li>
+				<li class="a2" id="li2"> 春上衿衣：花澤香菜</li>
+			</div>
+			<div class="div4"></div>
+			<div class="div3">
+				<a href="https://www.bilibili.com/bangumi/play/ss427/?from=search&seid=12790219834590752945"><img src="images/img.jpg" class="img2" id="cp5" onmousemove="mousemove(this);" onmouseout="mouseout(this);"/></a>
+				<img src="img/fanju.png" style="position: relative;top: -114px; left: 26px;" />
+				<a href="https://www.bilibili.com/bangumi/play/ss427/?from=search&seid=12790219834590752945" class="a1">某科学的超电磁炮S</a>
+				<li class="a2" id="li1">地区: 日本</li>
+				<li class="a2" id="li1">风格: 百合、奇幻、校园、战斗、漫改</li>
+				<li class="a2" id="li1">声优：御坂美琴：佐藤利奈</li>
+				<li class="a2" id="li2"> 白井黑子：新井里美</li>
+				<li class="a2" id="li2"> 初春饰利：豊崎愛生</li>
+				<li class="a2" id="li2"> 佐天泪子：伊藤加奈惠 </li>
+				<li class="a2" id="li2"> 春上衿衣：花澤香菜</li>
+			</div>
+			<div class="div4"></div>
+			<div class="div3">
+				<a href="https://www.bilibili.com/bangumi/play/ss3271/?from=search&seid=8179438816917677180"><img src="img/class.jpg" class="img2" id="ansha" onmousemove="mousemove(this);" onmouseout="mouseout(this);"/></a>
+				<img src="img/fanju.png" style="position: relative;top: -114px; left: 26px;" />
+				<a href="https://www.bilibili.com/bangumi/play/ss3271/?from=search&seid=8179438816917677180" class="a1">暗杀教室&nbsp;&nbsp;第二季</a>
+				<li class="a2" id="li1">地区: 日本</li>
+				<li class="a2" id="li1">风格: 日常、热血、校园、战斗、伪娘</li>
+				<li class="a2" id="li1">声优：黄老师：福山润 </li>
+				<li class="a2" id="li2">  潮田渚：渕上舞</li>
+				<li class="a2" id="li2">  茅野枫：洲崎绫 </li>
+				<li class="a2" id="li2">  赤羽业：冈本信彦 </li>
+				<li class="a2" id="li2">  乌间惟臣：杉田智和 </li>
+			</div>
+			<div class="div4"></div>
+			<div class="div3">
+				<a href="https://www.bilibili.com/bangumi/play/ss1177/?from=search&seid=17068977768703718103"><img src="img/clannad.jpg" class="img2" id="clannad1" onmousemove="mousemove(this);" onmouseout="mouseout(this);"/></a>
+				<img src="img/fanju.png" style="position: relative;top: -114px; left: 26px;" />
+				<a href="https://www.bilibili.com/bangumi/play/ss1177/?from=search&seid=17068977768703718103" class="a1">CLANNAD</a>
+				<li class="a2" id="li1">地区: 日本</li>
+				<li class="a2" id="li1">风格: 治愈、时泪、校园、催泪、游戏改</li>
+				<li class="a2" id="li1">声优：冈崎朋也：中村悠一 </li>
+				<li class="a2" id="li2">   一之濑琴美：能登麻美子</li>
+				<li class="a2" id="li2">   伊吹风子：野中藍  </li>
+				<li class="a2" id="li2">  古河渚：中原麻衣 </li>
+				<li class="a2" id="li2">  藤林杏：広橋涼  </li>
+			</div>
+			<div class="div4"></div>
+			<div class="div3">
+				<a href="https://www.bilibili.com/bangumi/play/ss1178/?from=search&seid=17068977768703718103"><img src="img/clannad after.jpg" class="img2" id="clannad after1" onmousemove="mousemove(this);" onmouseout="mouseout(this);"/></a>
+				<img src="img/fanju.png" style="position: relative;top: -114px; left: 26px;" />
+				<a href="https://www.bilibili.com/bangumi/play/ss1178/?from=search&seid=17068977768703718103" class="a1">CLANNAD ～AFTER STORY～</a>
+				<li class="a2" id="li1">地区: 日本</li>
+				<li class="a2" id="li1">风格: 治愈、时泪、校园、催泪、游戏改</li>
+				<li class="a2" id="li1">声优：冈崎朋也：中村悠一 </li>
+				<li class="a2" id="li2">   一之濑琴美：能登麻美子</li>
+				<li class="a2" id="li2">   伊吹风子：野中藍  </li>
+				<li class="a2" id="li2">  古河渚：中原麻衣 </li>
+				<li class="a2" id="li2">  藤林杏：広橋涼  </li>
+			</div>
+			<div class="div4"></div>
+			<div class="div3">
+				<a href="https://www.bilibili.com/bangumi/play/ss2580/?from=search&seid=16059141136765554149"><img src="img/umr.jpg" class="img2" id="umr1" onmousemove="mousemove(this);" onmouseout="mouseout(this);"/></a>
+				<img src="img/fanju.png" style="position: relative;top: -114px; left: 26px;" />
+				<a href="https://www.bilibili.com/bangumi/play/ss2580/?from=search&seid=16059141136765554149" class="a1">干物妹！小埋</a>
+				<li class="a2" id="li1">地区: 日本</li>
+				<li class="a2" id="li1">风格: 日常、搞笑、萌系、漫改</li>
+				<li class="a2" id="li1">声优：土间埋：田中爱美</li>
+				<li class="a2" id="li2"> 土间太平：野岛健儿 </li>
+				<li class="a2" id="li2"> 海老名菜菜：影山灯 </li>
+				<li class="a2" id="li2"> 本场切绘：白石晴 </li>
+				<li class="a2" id="li2"> 香 橘·希尔芬福特：古川由利奈  </li>
+			</div>
+			<div class="div4"></div>
+			<div class="div3">
+				<a href="https://www.bilibili.com/bangumi/play/ss6446/?from=search&seid=16059141136765554149"><img src="img/umr2.jpg" class="img2" id="umr3" onmousemove="mousemove(this);" onmouseout="mouseout(this);"/></a>
+				<img src="img/fanju.png" style="position: relative;top: -114px; left: 26px;" />
+				<a href="https://www.bilibili.com/bangumi/play/ss6446/?from=search&seid=16059141136765554149" class="a1">干物妹！小埋R</a>
+				<li class="a2" id="li1">地区: 日本</li>
+				<li class="a2" id="li1">风格: 日常、搞笑、萌系、漫改</li>
+				<li class="a2" id="li1">声优：土间埋：田中爱美</li>
+				<li class="a2" id="li2"> 土间太平：野岛健儿 </li>
+				<li class="a2" id="li2"> 海老名菜菜：影山灯 </li>
+				<li class="a2" id="li2"> 本场切绘：白石晴 </li>
+				<li class="a2" id="li2"> 香 橘·希尔芬福特：古川由利奈  </li>
+			</div>
+		</div>
+            <div class="tabList">
+			<div style="height: 1200px; border: 1px solid #96c2f1; background: #eff7ff">
+				<div style="color: red; padding-left: 200px;">暂无资源,如有意向，可自己制作上传，或移至
+				<a href="http://www.4399.com/">4399</a>
+				</div>
+			</div>
+            </div>
+        </div>
+    </div>
+</div>
+            <script type="text/javascript">
+				var picture;
+				var i=0;
+				function mousemove(tr){
+					if(i==0){
+						picture=tr.src;
+						i++;
+					}
+					var photo=tr.id;
+					tr.src="img/"+photo+".jpg";
+				}
+				function mouseout(td){
+					td.src=picture;	
+					i--;
+				}
+			</script>
+    <script src="./dist/skPlayer.min.js"></script>
+    <script>
+        var player = new skPlayer({
+            autoplay: false,
+            music: {
+                type: 'cloud',
+                source: 585136523
+            }
+        });
+    </script>
+<script charset="utf-8">
+	window.onload = function (){
+        var windowWidth = document.body.clientWidth; //window 宽度;
+		var wrap = document.getElementById('wrap');
+        var tabClick = wrap.querySelectorAll('.tabClick')[0];
+        var tabLi = tabClick.getElementsByTagName('li');
+        
+        var tabBox =  wrap.querySelectorAll('.tabBox')[0];
+        var tabList = tabBox.querySelectorAll('.tabList');
+        
+        var lineBorder = wrap.querySelectorAll('.lineBorder')[0];
+        var lineDiv = lineBorder.querySelectorAll('.lineDiv')[0];
+        
+        var tar = 0;
+        var endX = 0;
+        var dist = 0;
+        
+        tabBox.style.overflow='hidden';
+        tabBox.style.position='relative';
+        tabBox.style.width=windowWidth*tabList.length+"px";
+				
+        for(var i = 0 ;i<tabLi.length; i++ ){
+              tabList[i].style.width=windowWidth+"px";
+              tabList[i].style.float='left';
+              tabList[i].style.float='left';
+              tabList[i].style.padding='0';
+              tabList[i].style.margin='0';
+              tabList[i].style.verticalAlign='top';
+              tabList[i].style.display='table-cell';
+        }
+        
+        for(var i = 0 ;i<tabLi.length; i++ ){
+            tabLi[i].start = i;
+            tabLi[i].onclick = function(){
+                var star = this.start;
+                for(var i = 0 ;i<tabLi.length; i++ ){
+                    tabLi[i].className='';
+                };
+                tabLi[star].className='active';
+                init.lineAnme(lineDiv,windowWidth/tabLi.length*star)
+                init.translate(tabBox,windowWidth,star);
+                endX= -star*windowWidth;
+            }
+        }
+        
+        function OnTab(star){
+            if(star<0){
+                star=0;
+            }else if(star>=tabLi.length){
+                star=tabLi.length-1
+            }
+            for(var i = 0 ;i<tabLi.length; i++ ){
+                tabLi[i].className='';
+            };
+            
+             tabLi[star].className='active';
+            init.translate(tabBox,windowWidth,star);
+            endX= -star*windowWidth;
+        };
+        
+        tabBox.addEventListener('touchstart',chstart,false);
+        tabBox.addEventListener('touchmove',chmove,false);
+        tabBox.addEventListener('touchend',chend,false);
+        //按下
+        function chstart(ev){
+            ev.preventDefault;
+            var touch = ev.touches[0];
+            tar=touch.pageX;
+            tabBox.style.webkitTransition='all 0s ease-in-out';
+            tabBox.style.transition='all 0s ease-in-out';
+        };
+        //滑动
+        function chmove(ev){
+            var stars = wrap.querySelector('.active').start;
+            ev.preventDefault;
+            var touch = ev.touches[0];
+            var distance = touch.pageX-tar;
+            dist = distance;
+            init.touchs(tabBox,windowWidth,tar,distance,endX);
+            init.lineAnme(lineDiv,-dist/tabLi.length-endX/4);
+        };
+        //离开
+        function chend(ev){
+            var str= tabBox.style.transform;
+            var strs = JSON.stringify(str.split(",",1));  
+            endX = Number(strs.substr(14,strs.length-18)); 
+            
+            if(endX>0){
+                init.back(tabBox,windowWidth,tar,0,0,0.3);
+                endX=0
+            }else if(endX<-windowWidth*tabList.length+windowWidth){
+                endX=-windowWidth*tabList.length+windowWidth
+                init.back(tabBox,windowWidth,tar,0,endX,0.3);
+            }else if(dist<-windowWidth/3){
+                 OnTab(tabClick.querySelector('.active').start+1);
+                 init.back(tabBox,windowWidth,tar,0,endX,0.3);
+            }else if(dist>windowWidth/3){
+                 OnTab(tabClick.querySelector('.active').start-1);
+            }else{
+                 OnTab(tabClick.querySelector('.active').start);
+            }
+            var stars = wrap.querySelector('.active').start;
+            init.lineAnme(lineDiv,stars*windowWidth/4);
+            
+        };
+	};
+	
+    var init={
+        translate:function(obj,windowWidth,star){
+            obj.style.webkitTransform='translate3d('+-star*windowWidth+'px,0,0)';
+            obj.style.transform='translate3d('+-star*windowWidth+',0,0)px';
+            obj.style.webkitTransition='all 0.3s ease-in-out';
+            obj.style.transition='all 0.3s ease-in-out';
+        },
+        touchs:function(obj,windowWidth,tar,distance,endX){
+            obj.style.webkitTransform='translate3d('+(distance+endX)+'px,0,0)';
+            obj.style.transform='translate3d('+(distance+endX)+',0,0)px';
+        },
+        lineAnme:function(obj,stance){
+            obj.style.webkitTransform='translate3d('+stance+'px,0,0)';
+            obj.style.transform='translate3d('+stance+'px,0,0)';
+            obj.style.webkitTransition='all 0.1s ease-in-out';
+            obj.style.transition='all 0.1s ease-in-out';
+        },
+        back:function(obj,windowWidth,tar,distance,endX,time){
+            obj.style.webkitTransform='translate3d('+(distance+endX)+'px,0,0)';
+            obj.style.transform='translate3d('+(distance+endX)+',0,0)px';
+            obj.style.webkitTransition='all '+time+'s ease-in-out';
+            obj.style.transition='all '+time+'s ease-in-out';
+        },
+    }
+</script>
+</body>
+</html>

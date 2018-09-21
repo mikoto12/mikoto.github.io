@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=440,user-scalable=no">
+<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+<title>收藏</title>
+
+<style type="text/css">* {
+	margin: 0;
+	padding: 0
+}
+
+ul,
+li {
+	list-style: none
+}
+
+.tabClick {
+	background: white;
+	overflow: hidden
+}
+
+.tabClick li {
+	height: 40px;
+	line-height: 40px;
+	width: 25%;
+	float: left;
+	text-align: center
+}
+
+.tabClick li.active {
+	color: #099;
+	transition: 0.1s;
+	font-weight: bold
+}
+
+.tabCon {
+	overflow: hidden
+}
+
+.tabBox {
+	position: relative
+}
+
+
+/*.tabList{word-break: break-all; width:100%;float:left; line-height:100px; text-align:center; color:#D3D3D3; font-size:36px; font-family: "Arial Black"}*/
+
+.lineBorder {
+	height: 2px;
+	overflow: hidden;
+	background: #f3f3f3
+}
+
+.lineDiv {
+	background: #099;
+	height: 2px;
+	width: 25%;
+}
+
+.up {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -320px 0 0 -470px;
+	width: 1000px;
+}
+
+#div1 {
+	height: 50px;
+	background: gainsboro;
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.50;
+	opacity: 0.50;
+}
+
+.op {
+	list-style-type: none;
+	display: inline;
+}
+
+#li1 {
+	list-style-type: none;
+}
+
+#li2 {
+	list-style-type: none;
+	position: relative;
+	left: 348px;
+}
+
+.div2 {
+	height: 200px;
+	background-image: url(img/2233.jpg);
+	/*background-repeat:no-repeat;*/
+	background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+}
+
+.div3 {
+	height: 200px;
+	border: 1px solid #96c2f1;
+	background: #eff7ff
+}
+
+.div4 {
+	height: 20px;
+}
+
+.div5 {
+	height: 100px;
+	display: inline;
+}
+
+.ul1 {
+	padding: 200px, 0, 0, 0;
+}
+
+.div-inline {
+	display: inline;
+}
+
+.img1 {
+	border: 0;
+	position: relative;
+	top: 8px;
+}
+
+.img2 {
+	border: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 80%;
+	margin: auto;
+	position: relative;
+	left: 20px;
+	position: relative;
+	top: 20px;
+}
+
+.a1 {
+	height: 200px;
+	position: relative;
+	top: -120px;
+	position: relative;
+	left: 40px;
+	font-size: 22px;
+}
+
+.a2 {
+	position: relative;
+	top: -120px;
+	position: relative;
+	left: 300px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: red;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	border: 1px solid gainsboro;
+}
+
+a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+a:active {
+	color: red;
+}
+
+
+/* 设置ul和li的样式 */
+
+.ul1 ul,
+.ul1 li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+
+/* 设置二级菜单绝对定位，并隐藏 */
+
+.ul1>ul>li>ul {
+	position: absolute;
+	display: none;
+}
+
+
+/* 设置二级菜单的li的样式 */
+
+.ul1>ul>li>ul>li {
+	float: none;
+}
+
+
+/* 鼠标放在一级菜单上，显示二级菜单 */
+
+.ul1>ul>li:hover ul {
+	display: block;
+}
+
+
+/* 一级菜单 */
+
+.ul1>ul>li>a {
+	/*width: 120px;
+				line-height: 40px;*/
+	color: black;
+	/*background-color: #cfe;*/
+	text-align: center;
+	/*border-left: 1px solid #bbf;*/
+	display: block;
+}
+
+
+/* 在一级菜单中，第一个不设置左边框 */
+
+.ul1>ul>li:first-child>a {
+	border-left: none;
+}
+
+
+/* 在一级菜单中，鼠标放上去的样式 */
+
+.ul1>ul>li>a:hover {
+	color: #f0f;
+	background-color: #bcf;
+}
+
+
+/* 二级菜单 */
+
+.ul1>ul>li>ul>li>a {
+	width: 400px;
+	line-height: 36px;
+	color: #456;
+	background-color: #eff;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-top: none;
+	display: block;
+}
+
+
+/* 在二级菜单中，第一个设置顶边框 */
+
+.ul1>ul>li>ul>li:first-child>a {
+	border-top: 1px solid #ccc;
+}
+
+
+/* 在二级菜单中，鼠标放上去的样式 */
+
+.ul1>ul>li>ul>li>a:hover {
+	color: #a4f;
+	background-color: #cdf;
+}
+
+.ul2 {
+	position: relative;
+	left: 140px;
+	top: 14.5px;
+}
+
+.p {
+	position: relative;
+	left: 180px;
+	top: -26px;
+	display: inline;
+}</style>
+<body>
+			<div class="div2">
+				<div id="div1" style="text-align:left; padding: 8px,8px,8px,8px;">
+					<div class="ul1">
+						<p class="op">
+							<a href="index.html" title="主站"><img src="img/bilibili_icon.png" align="bottom" class="img1">主站</a>
+						</p>
+						<p class="op">
+							<a href="xiaoxi.html" title="消息">消息</a>
+						</p>
+						<p class="op">
+							<ul class="ul2">
+							<li>
+								 <a href="">动态</a>	
+								 <ul>
+								 	<li>
+								        <a>你所关注的up主暂未更新</a>
+								 	</li>
+								 	
+								 	<li>
+								 		<div style="width:400px;height:0px;border-top:1px black dashed;">
+								 			
+								 		</div>
+								 	</li>
+								 	
+								 	<li>
+								 		<a href="leimu.html">Joker,三天前更新</a>
+								 	</li>
+								 	
+								 	<li>
+								 		<a href="lovelive.html">真姬，我老婆,六天前更新</a>
+								 	</li>
+								 	
+								 	<li>
+								 		<a href="anglebeats.html">angle,十天前更新</a>
+								 	</li>
+								 </ul>
+							</li>
+							</ul>
+						</p>
+						<p class="p">
+							<a href="shoucang.html" title="收藏夹">收藏夹</a>
+						</p>
+						<p class="p">
+							<a href="zhuce.html" target="_blank" title="注册/登录">
+								<font color="red" size="4">注册/登录</font>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+            <div class="div3">
+				<div class="div5">
+					<a href="index2.html"><img src="img/yuban.jpg" class="img2" id="cp" onmousemove="mousemove(this);" onmouseout="mouseout(this);"/></a>
+				</div>
+				<div class="div5">
+					<a href="index2.html" class="a1">你指间跃动得电光是我此生不变的信仰</a>
+					</br>
+					<li class="a2" id="li1">标签：二次元，某科学的超电磁炮，炮姐</li>
+					<div class="div4"></div>
+					<li class="a2" id="li1">简介：御剑奔雷掣寒霄，</li>
+					<li class="a2" id="li2">坂间素面羡桃夭。</li>
+					<li class="a2" id="li2">美人飒飒冰心月，</li>
+					<li class="a2" id="li2">琴韵寒梅笑今朝。</li>
+				</div>
+			</div>
+			<script type="text/javascript">
+				var picture;
+				var i=0;
+				function mousemove(tr){
+					if(i==0){
+						picture=tr.src;
+						i++;
+					}
+					var photo=tr.id;
+					tr.src="img/"+photo+".jpg";
+				}
+				function mouseout(td){
+					td.src=picture;	
+					i--;
+				}
+			</script>
+		</body>
+</html>

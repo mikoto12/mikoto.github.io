@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SKPlayer</title>
+    <meta name="viewport" content="width=440,user-scalable=no">
+    <style>
+        body{
+            font-family:Arial,Helvetica,sans-serif;
+            color:#6A6B6F;
+            text-align:center;
+            padding-top:17px;
+            width:470px;
+            margin:0 auto;
+        }
+        h1{
+            font-size:36px;
+        }
+        h2{
+            font-size:24px;
+        }
+        p{
+            font-size:18px;
+        }
+        #skPlayer{
+            margin:27px auto 0;
+        }
+        .container{
+            margin-top:200px;
+        }
+        .doc{
+            text-align:left;
+        }
+        pre{
+            padding-left:2em;
+            font-size:16px;
+            line-height:24px;
+            color:#fff;
+            background-color:#272822;
+            border-radius:3px;
+        }
+        @media screen and (max-width:768px){
+            body{
+                width:100%;
+            }
+            .doc{
+                display:none;
+            }
+        }
+        .btu1
+        {
+        	position: relative;
+        	left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>哔哩哔哩-音乐</p>
+    <div id="skPlayer"></div>
+    <div class="container">
+        <button onclick="player.play()">播放</button>
+        <button onclick="player.pause()">暂停</button>
+        <button onclick="player.prev()">上一首</button>
+        <button onclick="player.next()">下一首</button>
+        <button onclick="player.switchMusic(7)">切歌</button>
+        <button onclick="player.toggleList()">歌曲栏</button>
+        <button onclick="player.toggleMute()">静音</button>
+    </div>
+    <script src="./dist/skPlayer.min.js"></script>
+    <script>
+        var player = new skPlayer({
+            autoplay: true,
+            music: {
+                type: 'cloud',
+                source: 585136523
+            }
+        });
+    </script>
+</body>
+</html>
